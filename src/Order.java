@@ -67,7 +67,10 @@ public class Order {
         }
     }
 
+    public int getId(){
+        return this.id;
+    }
     public String toString(){
-        return "[Order] : ItemCount : " + this.itemCount + " Total : " + this.itemCost + " Shipping : " + this.shippingCost;
+        return "[Order] : ItemCount : " + this.itemCount + " Total : " + this.getTotalPrice() + " Shipping : " + this.shippingCost + " ";
     }
 }
